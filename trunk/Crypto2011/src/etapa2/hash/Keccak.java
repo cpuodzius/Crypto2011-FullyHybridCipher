@@ -25,6 +25,7 @@ public class Keccak implements HashFunction, Duplex {
     }
 
     //TODO não sei se as constantes estão certas... tirei este algoritmo da implementação de referencia
+    // mas os vetores de teste (que eu vi) usam essa sequencia
     /*
 int LFSR86540(UINT8 *LFSR)
 {
@@ -60,8 +61,9 @@ void KeccakInitializeRoundConstants()
         0x8000000000008002L, 0x8000000000000080L, 0x000000000000800AL, 0x800000008000000AL,
         0x8000000080008081L, 0x8000000000008080L, 0x0000000080000001L, 0x8000000080008008L,
     };
+    
     //TODO
-
+    // mas os vetores de teste (que eu vi) usam essa sequencia, mas no documento está escrita a de baixo....
     static final int[] KeccakRhoOffsets = {0, 1, 62, 28, 27, 36, 44, 6, 55, 20, 3, 10, 43, 25, 39, 41, 45, 15, 21, 8, 18, 2, 61, 56, 14};
 //    static final int[] KeccakRhoOffsets = {0, 1, 190, 28, 91, 36, 300, 6, 55, 276, 3, 10, 171, 153, 231, 105, 45, 15, 21, 136, 210, 66, 253, 120, 78};
 
